@@ -9,19 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Tourist Group Management Information System</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- DataTables CSS -->
-    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
-    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
@@ -51,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">TGMIS Admin v1.0</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -272,21 +266,22 @@
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
                             </div>
                             <!-- /input-group -->
                         </li>
-                                                <!-- /////////////MENU///////////////// -->
+                        
+                        <!-- /////////////MENU///////////////// -->
                         <li>
                             <a href="index"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>                      
                         
                         <!-- /////////////TOUR///////////////// -->
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> TOUR<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-table fa-fw"></i> TOUR<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="tour_information">Tour</a>
@@ -300,10 +295,10 @@
                         
                         <!-- /////////////HOTEL///////////////// -->
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> HOTEL<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-building-o fa-fw"></i> HOTEL<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="hotel_booking">INFORMATION</a>
+                                    <a href="hotel_information">INFORMATION</a>
                                 </li>
                                 <li>
                                     <a href="#"> BOOKING<span class="fa arrow"></span></a>
@@ -315,7 +310,7 @@
                                             <a href="hotel_series">Series</a>
                                         </li>
                                         <li>
-                                            <a href="hotel_cancel">Cancelation</a>
+                                            <a href="hotel_cancel">Cancellation</a>
                                         </li>
                                         <li>
                                             <a href="hotel_amend">Amendment</a>
@@ -332,7 +327,7 @@
                         
                         <!-- /////////////CAR RENT///////////////// -->
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> CAR RENT<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-taxi fa-fw"></i> CAR RENT<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="car_information">INFORMATION</a>
@@ -347,7 +342,7 @@
                                             <a href="car_series">Series</a>
                                         </li>
                                         <li>
-                                            <a href="car_cancel">Cancelation</a>
+                                            <a href="car_cancel">Cancellation</a>
                                         </li>
                                         <li>
                                             <a href="car_amend">Amendment</a>
@@ -364,7 +359,7 @@
                         
                         <!-- /////////////RESTAURANT///////////////// -->
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> RESTAURANT<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-cutlery fa-fw"></i> RESTAURANT<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="restaurant_information">INFORMATION</a>
@@ -379,7 +374,7 @@
                                             <a href="restaurant_series">Series</a>
                                         </li>
                                         <li>
-                                            <a href="restaurant_cancel">Cancelation</a>
+                                            <a href="restaurant_cancel">Cancellation</a>
                                         </li>
                                         <li>
                                             <a href="restaurant_amend">Amendment</a>
@@ -396,7 +391,7 @@
                         
                         <!-- /////////////LOCATION///////////////// -->
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> LOCATION<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-map-marker fa-fw"></i> LOCATION<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="location_information">INFORMATION</a>
@@ -411,7 +406,7 @@
                                             <a href="location_series">Series</a>
                                         </li>
                                         <li>
-                                            <a href="location_cancel">Cancelation</a>
+                                            <a href="location_cancel">Cancellation</a>
                                         </li>
                                         <li>
                                             <a href="location_amend">Amendment</a>
@@ -428,7 +423,7 @@
                         
                         <!-- /////////////REPORT///////////////// -->
                         <li>
-                            <a href="report_information"><i class="fa fa-table fa-fw"></i> REPORT</a>
+                            <a href="report_information"><i class="fa fa-bar-chart-o fa-fw"></i> REPORT</a>
                         </li>                        
                     </ul>
                 </div>
@@ -436,503 +431,133 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-        <!-- /////////////FINISH MENU///////////////// -->
+        <!-- /////////////END MENU///////////////// -->
 
-        <div id="page-wrapper">
-            
-            
+        <!-- Page Content -->
+        <div id="page-wrapper"><br/>
             <div class="row">
-                <div class="col-lg-12"><br/>                  
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            HOTEL BOOKING
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#new_booking" data-toggle="tab">New Booking</a>
-                                </li>
-                                <li><a href="#series" data-toggle="tab">Series</a>
-                                </li>
-                                <li><a href="#cancel" data-toggle="tab">Cancellation</a>
-                                </li>
-                                <li><a href="#amend" data-toggle="tab">Amendment</a>
-                                </li>
-                                <li><a href="#confirm" data-toggle="tab">Confirmation</a>
-                                </li>                             
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="new_booking"></br>
-                                    <h4 class="text-center">NEW BOOKING</h4><br/>                                 
-                                        <p>
-                                            <button type="button" class="btn btn-primary">Primary</button>
-                                        </p>
-                            <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
-
-                        <!-- /.panel-heading -->
+                        <div class="panel panel-heading"><h5 class="text-center">NEW BOOKING</h5></div>
                         <div class="panel-body">
-                            <div class="dataTable_wrapper">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                    <thead>
-                                        <tr>
-                                            <th>Rendering engine</th>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                            <th>CSS grade</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="odd gradeX">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 4.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
-                                        </tr>
-                                        <tr class="even gradeC">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 5.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="odd gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 5.5</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5.5</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="even gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 6</td>
-                                            <td>Win 98+</td>
-                                            <td class="center">6</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="odd gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 7</td>
-                                            <td>Win XP SP2+</td>
-                                            <td class="center">7</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="even gradeA">
-                                            <td>Trident</td>
-                                            <td>AOL browser (AOL desktop)</td>
-                                            <td>Win XP</td>
-                                            <td class="center">6</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Firefox 1.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.7</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Firefox 1.5</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Firefox 2.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Firefox 3.0</td>
-                                            <td>Win 2k+ / OSX.3+</td>
-                                            <td class="center">1.9</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Camino 1.0</td>
-                                            <td>OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Camino 1.5</td>
-                                            <td>OSX.3+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Netscape 7.2</td>
-                                            <td>Win 95+ / Mac OS 8.6-9.2</td>
-                                            <td class="center">1.7</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Netscape Browser 8</td>
-                                            <td>Win 98SE+</td>
-                                            <td class="center">1.7</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Netscape Navigator 9</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.0</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">1</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.1</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">1.1</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.2</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">1.2</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.3</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">1.3</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.4</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">1.4</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.5</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">1.5</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.6</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">1.6</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.7</td>
-                                            <td>Win 98+ / OSX.1+</td>
-                                            <td class="center">1.7</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Mozilla 1.8</td>
-                                            <td>Win 98+ / OSX.1+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Seamonkey 1.1</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Gecko</td>
-                                            <td>Epiphany 2.20</td>
-                                            <td>Gnome</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Webkit</td>
-                                            <td>Safari 1.2</td>
-                                            <td>OSX.3</td>
-                                            <td class="center">125.5</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Webkit</td>
-                                            <td>Safari 1.3</td>
-                                            <td>OSX.3</td>
-                                            <td class="center">312.8</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Webkit</td>
-                                            <td>Safari 2.0</td>
-                                            <td>OSX.4+</td>
-                                            <td class="center">419.3</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Webkit</td>
-                                            <td>Safari 3.0</td>
-                                            <td>OSX.4+</td>
-                                            <td class="center">522.1</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Webkit</td>
-                                            <td>OmniWeb 5.5</td>
-                                            <td>OSX.4+</td>
-                                            <td class="center">420</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Webkit</td>
-                                            <td>iPod Touch / iPhone</td>
-                                            <td>iPod</td>
-                                            <td class="center">420.1</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Webkit</td>
-                                            <td>S60</td>
-                                            <td>S60</td>
-                                            <td class="center">413</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 7.0</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 7.5</td>
-                                            <td>Win 95+ / OSX.2+</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 8.0</td>
-                                            <td>Win 95+ / OSX.2+</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 8.5</td>
-                                            <td>Win 95+ / OSX.2+</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 9.0</td>
-                                            <td>Win 95+ / OSX.3+</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 9.2</td>
-                                            <td>Win 88+ / OSX.3+</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera 9.5</td>
-                                            <td>Win 88+ / OSX.3+</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Opera for Wii</td>
-                                            <td>Wii</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Nokia N800</td>
-                                            <td>N800</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Presto</td>
-                                            <td>Nintendo DS browser</td>
-                                            <td>Nintendo DS</td>
-                                            <td class="center">8.5</td>
-                                            <td class="center">C/A<sup>1</sup>
-                                            </td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>KHTML</td>
-                                            <td>Konqureror 3.1</td>
-                                            <td>KDE 3.1</td>
-                                            <td class="center">3.1</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>KHTML</td>
-                                            <td>Konqureror 3.3</td>
-                                            <td>KDE 3.3</td>
-                                            <td class="center">3.3</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>KHTML</td>
-                                            <td>Konqureror 3.5</td>
-                                            <td>KDE 3.5</td>
-                                            <td class="center">3.5</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeX">
-                                            <td>Tasman</td>
-                                            <td>Internet Explorer 4.5</td>
-                                            <td>Mac OS 8-9</td>
-                                            <td class="center">-</td>
-                                            <td class="center">X</td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>Tasman</td>
-                                            <td>Internet Explorer 5.1</td>
-                                            <td>Mac OS 7.6-9</td>
-                                            <td class="center">1</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>Tasman</td>
-                                            <td>Internet Explorer 5.2</td>
-                                            <td>Mac OS 8-X</td>
-                                            <td class="center">1</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Misc</td>
-                                            <td>NetFront 3.1</td>
-                                            <td>Embedded devices</td>
-                                            <td class="center">-</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Misc</td>
-                                            <td>NetFront 3.4</td>
-                                            <td>Embedded devices</td>
-                                            <td class="center">-</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeX">
-                                            <td>Misc</td>
-                                            <td>Dillo 0.8</td>
-                                            <td>Embedded devices</td>
-                                            <td class="center">-</td>
-                                            <td class="center">X</td>
-                                        </tr>
-                                        <tr class="gradeX">
-                                            <td>Misc</td>
-                                            <td>Links</td>
-                                            <td>Text only</td>
-                                            <td class="center">-</td>
-                                            <td class="center">X</td>
-                                        </tr>
-                                        <tr class="gradeX">
-                                            <td>Misc</td>
-                                            <td>Lynx</td>
-                                            <td>Text only</td>
-                                            <td class="center">-</td>
-                                            <td class="center">X</td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>Misc</td>
-                                            <td>IE Mobile</td>
-                                            <td>Windows Mobile 6</td>
-                                            <td class="center">-</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>Misc</td>
-                                            <td>PSP browser</td>
-                                            <td>PSP</td>
-                                            <td class="center">-</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="gradeU">
-                                            <td>Other browsers</td>
-                                            <td>All others</td>
-                                            <td>-</td>
-                                            <td class="center">-</td>
-                                            <td class="center">U</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="row">
+                            <div class="col-lg-8">
+                                <a href="hotel_newbooking_add"><button type="button" class="btn btn-primary">ADD</button></a>
                             </div>
-                            <!-- /.table-responsive -->
-                            <div class="well">
-                                <h4>DataTables Usage Information</h4>
-                                <p>DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at <a target="_blank" href="https://datatables.net/">https://datatables.net/</a>.</p>
-                                <a class="btn btn-default btn-lg btn-block" target="_blank" href="https://datatables.net/">View DataTables Documentation</a>
+                            <div class="col-lg-4">
+                                <div class="input-group custom-search-form">
+                                    <input type="text" class="form-control" placeholder="Search....">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                                    </span>                                    
+                                </div>                            
+                            </div>                            
+                            </div><br/>
+                            
+                            <!-- Table -->
+                            <div class="row">
+                            <div class="col-lg-12">
+                                <div class="dataTable_wrapper">
+                                    <table class="table table-responsive table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2" class="text-center">Booking ID</th>                                                
+                                                <th rowspan="2" class="text-center">Booking Date</th>
+                                                <th rowspan="2" class="text-center">Name</th>                                                
+                                                <th rowspan="2" class="text-center">Code</th>                                                                                               
+                                                <th rowspan="2" class="text-center">Issue By</th>
+                                                <th rowspan="2" class="text-center">Update Time</th>
+                                                <th rowspan="2" class="text-center">Status</th>
+                                                </tr>                                                
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td>N16040001</td>
+                                                <td>01/04/2016</td>
+                                                <td>Bangkok Palace</td>                                                
+                                                <td>DRTT150503A</td>                                                                                                
+                                                <td>User</td>
+                                                <td>01/04/2016</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>N16040002</td>
+                                                <td>02/04/2016</td>
+                                                <td>CHOLCHAN PATTAYA RESORT</td>                                                
+                                                <td>DRTT150503A-1</td>                                                                                              
+                                                <td>User</td>
+                                                <td>02/04/2016</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>N16040003</td>
+                                                <td>03/04/2016</td>
+                                                <td>TONGTARA RIVERVIEW HOTEL</td>                                                
+                                                <td>DRTT150503A-2</td>                                                                                               
+                                                <td>User</td>
+                                                <td>03/04/2016</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>N16040004</td>
+                                                <td>04/04/2016</td>
+                                                <td>JASMINE GRANDE RESIDENCE</td>                                                
+                                                <td>DRTT150503A-3</td>                                                                                              
+                                                <td>User</td>
+                                                <td>05/04/2016</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>N16040005</td>
+                                                <td>05/04/2016</td>
+                                                <td>Bangkok Palace</td>                                                
+                                                <td>DRTT150503A-4</td>                                                                                              
+                                                <td>User</td>
+                                                <td>05/04/2016</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>N16040006</td>
+                                                <td>06/04/2016</td>
+                                                <td>Bangkok Palace</td>                                                
+                                                <td>DRTT150503A-5</td>                                                                                               
+                                                <td>User</td>
+                                                <td>06/04/2016</td>
+                                                <td>Active</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>                                    
                             </div>
+                            </div>
+                            <!-- End Table -->
+                            
+                            <!-- Start pagination -->
+                            <nav class="text-center">
+                              <ul class="pagination">
+                                <li>
+                                  <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                  </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                  <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                            <!-- End pagination -->
+                            
                         </div>
-                        <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-12 -->
-            </div>
-                            <!-- /.row -->
-                                                                                                                                                                                                                                                                                                      
-                                </div>
-                                <div class="tab-pane fade" id="series"><br/>
-                                    <h4 class="text-center">SERIES</h4><br/>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="cancel"><br/>
-                                    <h4 class="text-center">CANCELLATION</h4><br/>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="amend"><br/>
-                                    <h4 class="text-center">AMENDMENT</h4><br/>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="confirm"><br/>
-                                    <h4 class="text-center">CONFIRMATION</h4><br/>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-
+            </div>        
         </div>
         <!-- /#page-wrapper -->
 
@@ -948,21 +573,8 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-    <!-- DataTables JavaScript -->
-    <script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-                responsive: true
-        });
-    });
-    </script>
 
 </body>
 
