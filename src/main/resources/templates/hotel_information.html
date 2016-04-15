@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Tourist Group Management Information System</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">TGMIS Admin v1.0</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -284,10 +284,13 @@
                             <a href="#"><i class="fa fa-table fa-fw"></i> TOUR<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="tour_information">Tour</a>
+                                    <a href="tour_information">TOUR TABLE</a>
+                                </li>                                
+                                <li>
+                                    <a href="tour_job">TOUR JOB</a>
                                 </li>
                                 <li>
-                                    <a href="agent_information">Agent</a>
+                                    <a href="agent_information">AGENT</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -434,20 +437,131 @@
         <!-- /////////////END MENU///////////////// -->
 
         <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Hotel Information</h1>                    
-                    <p>
-                        <a href="hotel_information_add"><button type="button" class="btn btn-primary">ADD</button></a>
-                    </p>
+        <div id="page-wrapper"><br/>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel panel-heading"><h5 class="text-center">HOTEL INFORMATION</h5></div>
+                        <div class="panel-body">
+                            <div class="row">
+                            <div class="col-lg-8">
+                                <a href="hotel_information_add"><button type="button" class="btn btn-primary">ADD</button></a>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="input-group custom-search-form">
+                                    <input type="text" class="form-control" placeholder="Search....">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                                    </span>                                    
+                                </div>                            
+                            </div>                            
+                            </div><br/>
+                            
+                            <!-- Table -->
+                            <div class="row">
+                            <div class="col-lg-12">
+                                <div class="dataTable_wrapper">
+                                    <table class="table table-responsive table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2" class="text-center">No.</th>                                                
+                                                <th rowspan="2" class="text-center">Name</th>
+                                                <th rowspan="2" class="text-center">Location / City</th>                                                
+                                                <th rowspan="2" class="text-center">Telephone</th>                                                                                               
+                                                <th rowspan="2" class="text-center">Fax</th>
+                                                <th rowspan="2" class="text-center">Degree</th>
+                                                <th rowspan="2" class="text-center">Status</th>
+                                                </tr>                                                
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td>1</td>
+                                                <td>ANGSANA LAGUNA PHUKET</td>
+                                                <td>BANGKOK</td>                                                
+                                                <td>02-9514722</td>                                                                                                
+                                                <td>02-9514655</td>
+                                                <td>5 Star</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>ANGSANA LAGUNA PHUKET</td>
+                                                <td>BANGKOK</td>                                                
+                                                <td>02-9514722</td>                                                                                                
+                                                <td>02-9514655</td>
+                                                <td>5 Star</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>ANGSANA LAGUNA PHUKET</td>
+                                                <td>BANGKOK</td>                                                
+                                                <td>02-9514722</td>                                                                                                
+                                                <td>02-9514655</td>
+                                                <td>5 Star</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>ANGSANA LAGUNA PHUKET</td>
+                                                <td>BANGKOK</td>                                                
+                                                <td>02-9514722</td>                                                                                                
+                                                <td>02-9514655</td>
+                                                <td>5 Star</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>ANGSANA LAGUNA PHUKET</td>
+                                                <td>BANGKOK</td>                                                
+                                                <td>02-9514722</td>                                                                                                
+                                                <td>02-9514655</td>
+                                                <td>5 Star</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>ANGSANA LAGUNA PHUKET</td>
+                                                <td>BANGKOK</td>                                                
+                                                <td>02-9514722</td>                                                                                                
+                                                <td>02-9514655</td>
+                                                <td>5 Star</td>
+                                                <td>Active</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>                                    
+                            </div>
+                            </div>
+                            <!-- End Table -->
+                            
+                            <!-- Start pagination -->
+                            <nav class="text-center">
+                              <ul class="pagination">
+                                <li>
+                                  <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                  </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                  <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                            <!-- End pagination -->
+                            
+                        </div>
                     </div>
-                    <!-- /.col-lg-12 -->
                 </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container-fluid -->
+            </div>        
         </div>
         <!-- /#page-wrapper -->
 

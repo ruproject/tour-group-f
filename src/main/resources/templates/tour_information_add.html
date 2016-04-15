@@ -284,10 +284,13 @@
                             <a href="#"><i class="fa fa-table fa-fw"></i> TOUR<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="tour_information">Tour</a>
+                                    <a href="tour_information">TOUR TABLE</a>
+                                </li>                                
+                                <li>
+                                    <a href="tour_job">TOUR JOB</a>
                                 </li>
                                 <li>
-                                    <a href="agent_information">Agent</a>
+                                    <a href="agent_information">AGENT</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -439,140 +442,303 @@
                 <div class="row">
                     <div class="col-lg-12"><br/>                       
                         <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading text-center">
                             TOUR INFORMATION DETAIL
                         </div>
                         <div class="panel-body">                                                                
                             <div class="row">
                                 <div class="col-lg-12">
                                     <form role="form" action="tour_information">
-                                        <!-- Code panel panel-default -->
+                                        <!-- Start tour detail panel panel-default -->
                                         <div class="col-lg-12">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">CODE DETAIL</div>
-                                                <div class="panel-body">                                                                                   
-                                                    <div class="form-group">
-                                                        <label>Code : </label>
-                                                        <input class="form-control" placeholder="Enter Office Tour Code">                                            
+                                                <div class="panel-heading text-center">Tour detail</div>
+                                                <div class="panel-body text-center">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="text-center">Code</label>
+                                                            <input class="form-control text-center" type="text" name="tour_code" placeholder="Tour Code">                                            
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Agent Name : </label>
-                                                        <input class="form-control" placeholder="Enter Agent Name">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="text-center">Agent Name</label>
+                                                            <select class="form-control" name="agent_name">
+                                                                <option>select</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Agent Code : </label>
-                                                        <input class="form-control" placeholder="Enter Agent Tour Code">
-                                                    </div>                                                 
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="text-center">Agent Code</label>
+                                                            <input class="form-control text-center" type="text" name="agent_code" placeholder="Agent Code">
+                                                        </div> 
+                                                    </div>    
                                                 </div> 
                                             </div>
                                         </div> 
-                                        <!-- End Code panel panel-default -->
+                                        <!-- End tour detail panel panel-default -->
 
-                                        <!-- Fight In panel panel-default -->
+                                        <!-- Start Fight In panel panel-default -->
                                         <div class="col-lg-6">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">FIGHT IN</div>
-                                                <div class="panel-body">                                                                                   
-                                                    <div class="form-group">
-                                                        <label>Fight In Time :</label>
-                                                        <input class="form-control" placeholder="Enter Fight In Time">                                            
+                                                <div class="panel-heading text-center">Fight in</div>
+                                                <div class="panel-body text-center">                                                                                   
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label>Fight In Time</label>
+                                                            <input class="form-control text-center" type="text" name="fight_in_time" placeholder="01/05/2016 01:30">                                           
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Fight In Code :</label>
-                                                        <input class="form-control" placeholder="Enter Fight In Code">
-                                                    </div>                                                                                                     
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label>Fight In Code</label>
+                                                            <input class="form-control text-center" type="text" name="fight_in_code" placeholder="fight">
+                                                        </div>
+                                                    </div>    
                                                 </div> 
                                             </div>
                                         </div> 
                                         <!-- End Fight In panel panel-default -->
                                         
-                                        <!-- Fight Out panel panel-default -->
+                                        <!-- Start Fight Out panel panel-default -->
                                         <div class="col-lg-6">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">FIGHT OUT</div>
-                                                <div class="panel-body">                                                                                   
-                                                    <div class="form-group">
-                                                        <label>Fight Out Time :</label>
-                                                        <input class="form-control" placeholder="Enter Fight Out Time">                                            
+                                            <div class="panel panel-default text-center">
+                                                <div class="panel-heading">Fight out</div>
+                                                <div class="panel-body text-center">   
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label>Fight Out Time</label>
+                                                            <input class="form-control text-center" type="text" name="fight_out_time" placeholder="01/05/2016 01:30">                                            
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Fight Out Code :</label>
-                                                        <input class="form-control" placeholder="Enter Fight Out Code">
-                                                    </div>                                                                                                     
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label>Fight Out Code</label>
+                                                            <input class="form-control text-center" type="text" name="fight_out_code" placeholder="fight">
+                                                        </div>
+                                                    </div>    
                                                 </div> 
                                             </div>
                                         </div> 
                                         <!-- End Fight Out panel panel-default -->
-                                        
-                                        <!-- Hotel panel panel-default -->
+                                                                             
+                                        <!-- Start Tourist panel panel-default -->
                                         <div class="col-lg-12">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">HOTEL INFORMATION</div>
-                                                <div class="panel-body">                                                                                   
-                                                    <div class="form-group">
-                                                        <label>Degree :</label>
-                                                            <select class="form-control">
-                                                                <option>5 Star(Inter)</option>
-                                                                <option>5 Star</option>
-                                                                <option>4 Star(Inter)</option>
-                                                                <option>4 Star</option>
-                                                                <option>3 Star</option>
+                                            <div class="panel panel-default text-center">
+                                                <div class="panel-heading">Tourist</div>
+                                                <div class="panel-body text-center">   
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group">
+                                                            <label>Child</label>
+                                                            <input class="form-control text-center" type="text" name="child" placeholder="">                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group">
+                                                            <label>Adult-1</label>
+                                                            <input class="form-control text-center" type="text" name="adult1" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group">
+                                                            <label>Adult-2</label>
+                                                            <input class="form-control text-center" type="text" name="adult2" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group">
+                                                            <label>T/L</label>
+                                                            <input class="form-control text-center" type="text" name="tl" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group">
+                                                            <label>Person</label>
+                                                            <input class="form-control text-center" type="text" name="person" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group">
+                                                            <label>Pax</label>
+                                                            <input class="form-control text-center" type="text" name="pax" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                        <!-- End tourist panel panel-default -->
+                                        
+                                        <!-- Start officer panel panel-default -->
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default text-center">
+                                                <div class="panel-heading">Officer</div>
+                                                <div class="panel-body text-center">   
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>T/G Name</label>
+                                                            <input class="form-control text-center" type="text" name="tg_name" placeholder="">                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>T/G Mobile</label>
+                                                            <input class="form-control text-center" type="text" name="tg_mobile" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>T/L</label>
+                                                            <input class="form-control text-center" type="text" name="tl_name" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>T/L Mobile</label>
+                                                            <input class="form-control text-center" type="text" name="tl_mobile" placeholder="">
+                                                        </div>
+                                                    </div>                                                    
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                        <!-- End officer panel panel-default -->                                       
+                                     
+                                        <!-- Start hotel panel panel-default -->
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default text-center">
+                                                <div class="panel-heading">Hotel Information</div>
+                                                <div class="panel-body text-center">
+                                                    
+                                                    <!-- Start bkk (day-1) panel panel-default -->
+                                                    <div class="col-lg-12">
+                                                        <div class="panel panel-default text-center">
+                                                            <div class="panel-heading text-center">                                                                                                                                  
+                                                                <select class="form-control">
+                                                                    <option>BKK (Day-1)</option>
+                                                                    <option>BKK (Day-2)</option>
+                                                                    <option>BKK (Day-3)</option>
+                                                                    <option>BKK (Day-4)</option>
+                                                                    <option>PTY (Day-1)</option>
+                                                                    <option>PTY (Day-2)</option>
+                                                                    <option>PTY (Day-3)</option>
+                                                                    <option>PTY (Day-4)</option>
+                                                                    <option>Other (Day-1)</option>
+                                                                    <option>Other (Day-2)</option>
+                                                                    <option>Other (Day-3)</option>
+                                                                    <option>Other (Day-4)</option>
+                                                                </select>                                                                                                                                            
+                                                            </div>
+                                                            <div class="panel-body text-center">                                                                   
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label>Degree</label>
+                                                                        <select class="form-control" name="hotel_degree">
+                                                                            <option>select</option>
+                                                                            <option>5 Star</option>
+                                                                            <option>5 Star(Inter)</option>
+                                                                            <option>4 Star</option>
+                                                                            <option>4 Star(Inter)</option>
+                                                                            <option>3 Star</option>
+                                                                        </select>                                            
+                                                                    </div>
+                                                                </div>                                                                                                       
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label>Hotel Name</label>
+                                                                        <select class="form-control" name="hotel_name">
+                                                                            <option>select</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <label>Check in</label>
+                                                                        <input class="form-control text-center" type="text" name="check_in" placeholder="">
+                                                                    </div>
+                                                                </div>                                                    
+                                                                <div class="col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <label>Check out</label>
+                                                                        <input class="form-control text-center" type="text" name="check_out" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <label>Night</label>
+                                                                        <input class="form-control text-center" type="text" name="night" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="form-group">
+                                                                        <label>Single</label>
+                                                                        <input class="form-control text-center" type="text" name="room_single" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="form-group">
+                                                                        <label>Twin</label>
+                                                                        <input class="form-control text-center" type="text" name="room_twin" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="form-group">
+                                                                        <label>Double</label>
+                                                                        <input class="form-control text-center" type="text" name="room_double" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="form-group">
+                                                                        <label>Triple</label>
+                                                                        <input class="form-control text-center" type="text" name="room_triple" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="form-group">
+                                                                        <label>Remark</label>
+                                                                        <input class="form-control text-center" type="text" name="remark" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div> 
+                                                    <!-- End bkk (day-1) panel panel-default -->
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <a href="#"><button type="button" class="btn btn-primary"><i class="fa fa-plus-circle"></i>  ADD</button></a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label>Issue by</label>
+                                                            <input class="form-control text-center" type="text" name="issue_by" placeholder="">                                            
+                                                        </div>
+                                                    </div>                                                                                                       
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label>Confirm by</label>
+                                                            <input class="form-control text-center" type="text" name="confirm_by" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label>Status</label>
+                                                            <select class="form-control" name="tour_status">
+                                                                <option>Active</option>
+                                                                <option>Cancel</option>
                                                             </select>
-                                                        <label>Check In :</label><input class="form-control" placeholder="DD/MM/YYYY">
-                                                        <label>Check In Time :</label><input class="form-control" placeholder="HH:MM">
-                                                        <label>Check Out :</label><input class="form-control" placeholder="DD/MM/YYYY">
-                                                        <label>Check Out Time :</label><input class="form-control" placeholder="HH:MM">
-                                                        <label>Night :</label><input class="form-control" placeholder="Enter Night">
-                                                        <label>Twin :</label><input class="form-control" placeholder="Enter Twin">
-                                                        <label>Double :</label><input class="form-control" placeholder="Enter Double">
-                                                        <label>Single :</label><input class="form-control" placeholder="Enter Single">
-                                                        <label>Extra :</label><input class="form-control" placeholder="Enter Extra">
-                                                    </div>                                                                                                      
+                                                        </div>
+                                                    </div>
+                                                    
                                                 </div> 
                                             </div>
                                         </div> 
-                                        <!-- End Hotel panel panel-default -->
+                                        <!-- End hotel panel panel-default -->   
                                         
-                                        <!-- Tourist panel panel-default -->
-                                        <div class="col-lg-12">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">TOURIST</div>
-                                                <div class="panel-body">                                                                                   
-                                                    <div>
-                                                        <label>Adult :</label>
-                                                            <input class="form-control" placeholder="Enter Adult">                                                
-                                                        <label>Child :</label>
-                                                            <input class="form-control" placeholder="Enter Child">
-                                                        <label>Baby :</label>
-                                                            <input class="form-control" placeholder="Enter Baby">
-                                                    </div>                                                                                                    
-                                                </div> 
-                                            </div>
-                                        </div> 
-                                        <!-- End Tourist panel panel-default -->
-                                        
-                                        <!-- Officer panel panel-default -->
-                                        <div class="col-lg-12">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">OFFICER</div>
-                                                <div class="panel-body">                                                                                   
-                                                    <div>
-                                                        <label>T/G :</label>
-                                                            <input class="form-control" placeholder="Enter T/G Name">                                                
-                                                        <label>T/G Mobile :</label>
-                                                            <input class="form-control" placeholder="Enter T/G Mobile">
-                                                        <label>T/L :</label>
-                                                            <input class="form-control" placeholder="Enter T/L Name">
-                                                        <label>T/L Mobile:</label>
-                                                            <input class="form-control" placeholder="Enter T/L Mobile">    
-                                                    </div>                                                                                                    
-                                                </div> 
-                                            </div>
-                                        </div> 
-                                        <!-- End Officer panel panel-default -->   
-                                        
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                        <button type="reset" class="btn btn-primary"><i class="fa fa-share-square-o"></i>  Clear</button>
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>  Save</button>
+                                        <a href="tour_information"><button type="button" class="btn btn-primary"><i class="fa fa-external-link"></i>  Done</button></a>
                                     </form>
                                 </div>                                
                             </div>
@@ -605,6 +771,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
+    
 </body>
 
 </html>

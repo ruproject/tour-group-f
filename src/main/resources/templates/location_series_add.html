@@ -9,10 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Tourist Group Management Information System</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bower_components/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
 
     <!-- MetisMenu CSS -->
     <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
@@ -22,13 +23,10 @@
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
+    
 
 </head>
 
@@ -45,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">TGMIS Admin v1.0</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -273,74 +271,85 @@
                             </div>
                             <!-- /input-group -->
                         </li>
+                        
+                        <!-- /////////////MENU///////////////// -->
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
+                            <a href="index"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>                      
+                        
+                        <!-- /////////////TOUR///////////////// -->
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-table fa-fw"></i> TOUR<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="tour_information">TOUR TABLE</a>
+                                </li>                                
+                                <li>
+                                    <a href="tour_job">TOUR JOB</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="agent_information">AGENT</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        
+                        <!-- /////////////HOTEL///////////////// -->
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-building-o fa-fw"></i> HOTEL<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
+                                    <a href="hotel_information">INFORMATION</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
+                                    <a href="#"> BOOKING<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">                                
+                                        <li>
+                                            <a href="hotel_newbooking">New Booking</a>
+                                        </li>
+                                        <li>
+                                            <a href="hotel_series">Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="hotel_cancel">Cancellation</a>
+                                        </li>
+                                        <li>
+                                            <a href="hotel_amend">Amendment</a>
+                                        </li>
+                                        <li>
+                                            <a href="hotel_confirm">Confirmation</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>    
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        
+                        <!-- /////////////CAR RENT///////////////// -->
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-taxi fa-fw"></i> CAR RENT<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Second Level Item</a>
+                                    <a href="car_information">INFORMATION</a>
                                 </li>
                                 <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
+                                    <a href="#">BOOKING<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">                                
                                         <li>
-                                            <a href="#">Third Level Item</a>
+                                            <a href="car_newbooking">New Booking</a>
                                         </li>
                                         <li>
-                                            <a href="#">Third Level Item</a>
+                                            <a href="car_series">Series</a>
                                         </li>
                                         <li>
-                                            <a href="#">Third Level Item</a>
+                                            <a href="car_cancel">Cancellation</a>
                                         </li>
                                         <li>
-                                            <a href="#">Third Level Item</a>
+                                            <a href="car_amend">Amendment</a>
+                                        </li>
+                                        <li>
+                                            <a href="car_confirm">Confirmation</a>
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
@@ -348,37 +357,262 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li class="active">
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                        
+                        <!-- /////////////RESTAURANT///////////////// -->
+                        <li>
+                            <a href="#"><i class="fa fa-cutlery fa-fw"></i> RESTAURANT<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a class="active" href="blank.html">Blank Page</a>
+                                    <a href="restaurant_information">INFORMATION</a>
                                 </li>
                                 <li>
-                                    <a href="login.html">Login Page</a>
+                                    <a href="#">BOOKING<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">                                
+                                        <li>
+                                            <a href="restaurant_newbooking">New Booking</a>
+                                        </li>
+                                        <li>
+                                            <a href="restaurant_series">Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="restaurant_cancel">Cancellation</a>
+                                        </li>
+                                        <li>
+                                            <a href="restaurant_amend">Amendment</a>
+                                        </li>
+                                        <li>
+                                            <a href="restaurant_confirm">Confirmation</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        
+                        <!-- /////////////LOCATION///////////////// -->
+                        <li>
+                            <a href="#"><i class="fa fa-map-marker fa-fw"></i> LOCATION<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="location_information">INFORMATION</a>
+                                </li>
+                                <li>
+                                    <a href="#">BOOKING<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">                                
+                                        <li>
+                                            <a href="location_newbooking">New Booking</a>
+                                        </li>
+                                        <li>
+                                            <a href="location_series">Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="location_cancel">Cancellation</a>
+                                        </li>
+                                        <li>
+                                            <a href="location_amend">Amendment</a>
+                                        </li>
+                                        <li>
+                                            <a href="location_confirm">Confirmation</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <!-- /////////////REPORT///////////////// -->
+                        <li>
+                            <a href="report_information"><i class="fa fa-bar-chart-o fa-fw"></i> REPORT</a>
+                        </li>                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
         </nav>
+        <!-- /////////////END MENU///////////////// -->
 
         <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Blank</h1>
+        <div id="page-wrapper"><br/>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel panel-heading"><h5 class="text-center">LOCATION SERIES BOOKING</h5></div>
+                        <div class="panel-body">
+                            <!-- Start form heading -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                <form class="form-horizontal">
+                                    <div class="panel-body">
+                                        <div class="form-group form-group-sm">
+                                            <label class="col-sm-9 control-label" for="formGroupInputSmall">Booking ID : </label>
+                                            <div class="col-sm-3">
+                                                <input class="form-control text-center" type="text" placeholder="Auto ID">
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-group-sm">
+                                            <label class="col-sm-9 control-label">Booking Date : </label>
+                                            <div class="col-sm-3">
+                                                <input class="form-control text-center" type="text" placeholder="Auto date">
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-group-sm">
+                                            <label class="col-sm-2 control-label">Select location : </label>
+                                            <div class="col-sm-4">
+                                                <select class="form-control"></select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-group-sm">
+                                            <label class="col-sm-2 control-label">To : </label>
+                                            <div class="col-sm-4">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-group-sm">
+                                            <label class="col-sm-2 control-label">Address : </label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-group-sm">
+                                            <label class="col-sm-2 control-label">Location / City : </label>
+                                            <div class="col-sm-2">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                            <label class="col-sm-2 control-label">Phone : </label>
+                                            <div class="col-sm-2">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                            <label class="col-sm-2 control-label">Fax : </label>
+                                            <div class="col-sm-2">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </form>
+                                </div>    
+                            </div>
+                            <!-- End form heading -->
+                            
+                            <!-- Start form content -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form role="form" action="location_series">
+                                        <!-- Code panel panel-default -->
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading text-center">TOUR DETAIL</div>
+                                                <div class="panel-body text-center">                                                                                   
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>Code</label>
+                                                            <input class="form-control text-center" placeholder="[char]">                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>IN</label>
+                                                            <input class="form-control text-center" placeholder="01/01/2016 12:00">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>T/G Name</label>
+                                                            <input class="form-control text-center" placeholder="[text]">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label>T/G Mobile</label>
+                                                            <input class="form-control text-center" placeholder="XXX-XXX-XXXX">
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                        <!-- End Code panel panel-default -->
+
+                                        <!-- Tourist panel panel-default -->
+                                        <div class="col-lg-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading text-center">TOURIST</div>
+                                                <div class="panel-body text-center">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label>ADL</label>
+                                                            <input class="form-control text-center" placeholder="[number]">                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label>CHD</label>
+                                                            <input class="form-control text-center" placeholder="[number]">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label>CHD</label>
+                                                            <input class="form-control text-center" placeholder="[number]">
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>    
+                                        </div>            
+                                        <!-- End Tourist panel panel-default -->                                                                              
+                                        
+                                        <!-- Panel panel panel-default -->
+                                        <div class="col-lg-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading text-center">COMMENT</div>
+                                                <div class="panel-body text-center">                                                    
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label>Remark</label>
+                                                            <input class="form-control text-center" placeholder="[text]">                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label>Status</label>
+                                                            <select class="form-control">
+                                                                <option>Active</option>
+                                                                <option>Cancel</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>    
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                        <!-- End comment panel panel-default --> 
+                                        
+                                                                               
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="panel-body text-center">                                                    
+                                                    <div class="col-lg-6">
+                                                        <a href="#"><button type="button" class="btn btn-primary"><i class="fa fa-file-text"></i>  ADD NEW</button></a>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>  Save</button> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        
+                                        <a href="#"><button type="button" class="btn btn-primary"><i class="fa fa-print"></i>  Print</button></a>                                            
+                                        <a href="location_series"><button type="button" class="btn btn-primary"><i class="fa fa-external-link"></i>  Done</button></a>
+                                                    
+                                    </form>
+                                </div>                                
+                            </div>
+                            <!-- /.row (nested) -->
+                            <!-- End form content -->
+                        </div>
                     </div>
-                    <!-- /.col-lg-12 -->
                 </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container-fluid -->
+            </div>        
         </div>
         <!-- /#page-wrapper -->
 
@@ -386,17 +620,19 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>   
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
+    
+    
 </body>
 
 </html>

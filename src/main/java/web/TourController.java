@@ -20,4 +20,23 @@ public class TourController {
     public String tourInformationAdd(){
         return "tour_information_add";
     }
+    
+    @RequestMapping("/tour_hotel_booking")
+    public String tourHotelBooking(){
+        return "tour_hotel_booking";
+    }
+    
+    @RequestMapping("/tour_hotel_booking_add")
+    public String tourHotelBookingAdd(){
+        return "tour_hotel_booking_add";
+    }
+    
+    @RequestMapping("/tour_job")
+    public String tourJob(){
+        return "tour_job";
+    }
+    @RequestMapping("/tour_job_add")
+    public String tourJobAdd(){
+        return "tour_job_add";
+    }
 }

@@ -66,7 +66,7 @@ public class LocationController {
         return "location_confirm";
     }
     
-    @RequestMapping("/hlocation_confirm_add")
+    @RequestMapping("/location_confirm_add")
     public String locationConfirmAdd(){
         return "location_confirm_add";
     }
