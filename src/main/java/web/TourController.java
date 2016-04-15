@@ -19,17 +19,7 @@ public class TourController {
     @RequestMapping("/tour_information_add")
     public String tourInformationAdd(){
         return "tour_information_add";
-    }
-    
-    @RequestMapping("/tour_hotel_booking")
-    public String tourHotelBooking(){
-        return "tour_hotel_booking";
-    }
-    
-    @RequestMapping("/tour_hotel_booking_add")
-    public String tourHotelBookingAdd(){
-        return "tour_hotel_booking_add";
-    }
+    }     
     
     @RequestMapping("/tour_job")
     public String tourJob(){
